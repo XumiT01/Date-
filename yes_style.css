@@ -1,0 +1,151 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f862a0;
+}
+
+/* Position the "No" button absolutely within body */
+#noButton {
+    position: absolute;
+    margin-left: 150px;
+    transition: 0.5s;
+    /* Smooth movement */
+}
+
+#yesButton {
+    position: absolute;
+    margin-right: 150px;
+    /* Smooth movement */
+}
+
+.header_text {
+    font-family: 'Nunito';
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    color: #aa041d;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.text {
+    font-family: 'Nunito';
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 20px;
+    /* optional: adds some space between the buttons */
+}
+
+.btn {
+    background-color: #FFB6C1;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border: none;
+    border-radius: 12px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #FAF9F6;
+}
+
+.gif_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    height: 500px;
+}
+
+.header_text {
+    animation: moveText 1s infinite alternate;
+}
+
+@keyframes moveText {
+    from {
+        transform: translateX(1);
+    }
+
+    to {
+        transform: translateX(80px);
+    }
+}
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .image-wrapper {
+    position: relative;
+    margin: 50px;
+    border-radius: 15%;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .image-wrapper img {
+    display: block;
+    width: 50px; /* Adjust size as needed */
+    height: 50px; /* Adjust size as needed */
+    object-fit: cover;
+  }
+  
+  .image-wrapper::before {
+    content: "";
+    position: absolute;
+    top: -10%;
+    left: -10%;
+    width: 1%;
+    height: 1%;
+    border-radius: 50%;
+    background: radial-gradient(circle at 50% 50%, transparent 20%, #fff 20%);
+  }
+
+h1{
+    font-size: 300%;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-decoration: underline rgb(255, 255, 255);
+    padding-bottom: 13cm;
+    position: absolute;
+    display: flex;
+    text-align: center;
+    color: #aa041d;
+}
+
+@keyframes moveText {
+    from {
+        transform: translateX(1);
+    }
+
+    to {
+        transform: translateX(80px);
+    }
+}
+
+.heading {
+    animation: moveText 6s infinite alternate;
+}

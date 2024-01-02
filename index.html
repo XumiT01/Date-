@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="style.css">
+
+<head>
+</head>
+
+<body>
+    <!-- Your webpage content -->
+    <p class="moving-text">Are you Rose?</p>
+</body>
+
+<body>
+    <div class="container">
+        <style>
+            body {
+                background-image: url(blur.jpg);
+                height: 100vh;
+                background-size: cover;
+                background-position: 100%;
+            }
+        </style>
+        <br>
+        <div class="gif_container">
+            <img src="cute.jpeg" alt="Cute animated illustration">
+        </div>
+        <div class="buttons">
+            <button class="btn" id="yesButton" onclick="nextPage()">Yes</button>
+            <button class="btn" id="noButton" onmouseover="moveButton()" onclick="moveButton()">No</button>
+            <br>
+            <br>
+            <br>
+            <script>
+                function nextPage() {
+                    window.location.href = "yes.html";
+                }
+
+                function moveButton() {
+                    var x = Math.random() * (window.innerWidth - document.getElementById('noButton').offsetWidth);
+                    var y = Math.random() * (window.innerHeight - document.getElementById('noButton').offsetHeight);
+                    document.getElementById('noButton').style.left = `${x}px`;
+                    document.getElementById('noButton').style.top = `${y}px`;
+                }
+            </script>
+        </div>
+    </div>
+
+</body>
+
+</html>
